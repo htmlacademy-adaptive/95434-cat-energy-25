@@ -1,12 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class = "page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__logo-wrapper">
+        <img class="main-header__logo-image"
+          src="img\svg\logo-img-mobile.svg" width="33.32" height="37.61"
+          alt="Кэт Энерджи"
+        >
+        <img class="main-header__logo-text"
+          src="img\svg\logo-text.svg" width="101" height="18"
+          alt="Cat Energy"
+        >
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Кэт энерджи — правильная кошачья еда</h1>
+      <section class="program">
+        <div class="program__wrapper">
+            <h2 class="program__title">Функциональное<br>питание для котов</h2>
+            <p class="program__slogan">Занялся собой? Займись котом!</p>
+            <img class="program__image"
+              src="img\index-can-mobile 1.jpg" width="280" height="270"
+              alt="Корм Кэт Энерджи"
+            >
+            <a class="program__button" href="#">Подобрать программу</a>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Перечень каталога</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img class="catalog__image"
+                src="img\cat_back.png" width="50" height="50"
+                alt="Гордая кошка"
+              >
+              <h3 class="catalog__title">Похудение</h3>
+              <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="catalog__link link" href="#">Каталог Slim</a>
+              <svg class="catalog__link link-icon" width="24" height="12">
+                <use xlink:href="source\img\sprite\finger.svg"></use>
+              </svg>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__image"
+                src="img\cat_back_horizont.png" width="67" height="50"
+                alt="Крадущаяся кошка"
+              >
+              <h3 class="catalog__title">Набор массы</h3>
+              <p class="catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="catalog__link link" href="#">Каталог Pro</a>
+              <svg class="catalog__link link-icon" width="24" height="12">
+                <use xlink:href="source\img\sprite\finger.svg"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img class="advantages__image"
+                src="img\sprite\Leaf-icon.svg" width="60" height="60"
+                alt="Польза"
+              >
+              <p class="advantages__text">Функциональное питание<br>
+                содержит только полезные<br>
+                питательные вещества.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image"
+                src="img\sprite\Glass_icon.svg" width="60" height="60"
+                alt="Удобство"
+              >
+              <p class="advantages__text">Выпускается в виде порошка,<br>
+                который нужно лишь залить<br>
+                кипятком и готово.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image"
+                src="img\sprite\Fork_knife_icon.svg" width="60" height="60"
+                alt="Легкость"
+              >
+              <p class="advantages__text">Замените один-два приема<br>
+                обычной еды на наше<br>
+                функциональное питание.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image"
+                src="img\sprite\Alarm_icon.svg" width="60" height="60"
+                alt="Скорость"
+              >
+              <p class="advantages__text">Уже через месяц<br>
+                наслаждайтесь изменениями<br>
+                к лучшему вашего питомца!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
