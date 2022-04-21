@@ -15,3 +15,36 @@
 .main-nav__item {
   padding: 22px 70px 24px 70px;
 }
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background: url("../img/tablet_green_cat.png") no-repeat top;
+    background-size: 720 694;
+  }
+
+  .main-nav__link {
+    color: #ffffff;
+  }
+}

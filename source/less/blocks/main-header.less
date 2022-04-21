@@ -1,8 +1,34 @@
 .main-header {
   outline: 3px solid #f01d1d;
   outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__logo-text {
   margin-right: 20px;
+}
+
+.main-header__logo-wrapper {
+  height: 66px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-header__logo-wrapper {
+    // background: url("../img/logo-tablet.svg") no-repeat auto;
+    height: 78px; // общая высота margin 42 + 36
+  }
+}
+
+@media (min-width: @desktop-width) {
+  // .main-header {
+  //   width: 100%;
+  //   justify-content: space-around;
+  // }
 }
