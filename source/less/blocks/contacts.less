@@ -23,3 +23,35 @@
 .contacts__wrapper--main {
   background-color: #ffffff;
 }
+
+.contacts__item {
+  list-style: none;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map-image {
+    display: none;
+  }
+
+  .contacts__map {
+    background: url("../img/map-tablet.jpg") no-repeat;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    background: url("../img/map-desctop.jpg") no-repeat;
+  }
+
+  .contacts__detail {
+    width: 565px;
+    height: 198px;
+    z-index: 1;
+  }
+}
