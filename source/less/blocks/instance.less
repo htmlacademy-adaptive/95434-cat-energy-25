@@ -2,8 +2,13 @@
   outline: 3px solid #3b08f4cc;
   outline-offset: -3px;
   background-color: @background-color-dark-grey;
-  padding: 25px 20px 40px 20px;
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
 }
+
+// .instance__wrapper-title {
+//   background-color: @background-color-dark-grey;
+// }
 
 .instance__title {
   font-size: 36px;
@@ -34,4 +39,106 @@
   line-height: 100%;
   .font-style();
   .font-style-title();
+}
+
+.instance__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instance__item {
+  border: 1px solid @border-special-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instance__state-before,
+.instance__state-after {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .instance__wrapper {
+    padding: 100px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: -100px;
+  }
+
+  .instance__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+  }
+
+  .instance__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .instance__wrapper-list-slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .instance__wrapper-image {
+    background: @background-color-dark-grey;
+  }
+
+  .instance__state-before,
+  .instance__state-after {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .instance__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .instance__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .instance__slogan {
+    font-size: 20px;
+  }
+
+  .instance__wrapper-state {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instance__wrapper {
+    background-color: @background-color-light-grey;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .instance__wrapper-common {
+    flex-basis: 50%;
+  }
+
+  .instance__wrapper-list-slogan {
+    flex-direction: column;
+  }
+
+  .instance__wrapper-image {
+    background: none;
+    flex-basis: 50%;
+  }
+
+  .instance__wrapper-title {
+    background-color: #ffffff;
+  }
 }
