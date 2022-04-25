@@ -2,8 +2,13 @@
   outline: 3px solid #3b08f4cc;
   outline-offset: -3px;
   background-color: @background-color-dark-grey;
-  padding: 25px 20px 40px 20px;
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
 }
+
+// .instance__wrapper-title {
+//   background-color: @background-color-dark-grey;
+// }
 
 .instance__title {
   font-size: 36px;
@@ -56,10 +61,11 @@
 
 @media (min-width: @tablet-width) {
   .instance__wrapper {
-    padding: 25px 30px 40px 30px;
+    padding: 100px 30px 40px 30px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    margin-top: -100px;
   }
 
   .instance__title {
@@ -104,14 +110,35 @@
   .instance__slogan {
     font-size: 20px;
   }
+
+  .instance__wrapper-state {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .instance__wrapper {
     background-color: @background-color-light-grey;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .instance__wrapper-common {
+    flex-basis: 50%;
+  }
+
+  .instance__wrapper-list-slogan {
+    flex-direction: column;
   }
 
   .instance__wrapper-image {
     background: none;
+    flex-basis: 50%;
+  }
+
+  .instance__wrapper-title {
+    background-color: #ffffff;
   }
 }

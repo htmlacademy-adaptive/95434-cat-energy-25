@@ -5,12 +5,12 @@
   flex-direction: column;
 }
 
-.main-header__logo-text {
-  margin-right: 20px;
-}
-
 .main-header__logo-wrapper {
   height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 
@@ -21,8 +21,14 @@
   }
 
   .main-header__logo-wrapper {
-    // background: url("../img/logo-tablet.svg") no-repeat auto;
     height: 78px; // общая высота margin 42 + 36
+    align-items: center;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .main-header__toggle {
+    display: none;
   }
 }
 

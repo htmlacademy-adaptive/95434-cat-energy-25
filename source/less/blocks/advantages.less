@@ -1,7 +1,9 @@
 .advantages__wrapper {
   outline: 3px solid #ec9006cc;
   outline-offset: -3px;
-  padding: 25px 20px 40px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__title {
@@ -23,11 +25,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +32,7 @@
 
   .advantages__item {
     padding: 0;
-    width: 354px;
+    width: 340px;
   }
 
   .advantages__text {

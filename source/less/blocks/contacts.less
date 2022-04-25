@@ -30,7 +30,6 @@
 
 .contacts__list {
   display: flex;
-  justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,16 +41,28 @@
     background: url("../img/map-tablet.jpg") no-repeat;
     height: 400px;
   }
+
+  .contacts__list {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__map {
     background: url("../img/map-desctop.jpg") no-repeat;
+    // height: 400px;
+  }
+
+  .contacts__wrapper {
+    position: relative;
   }
 
   .contacts__detail {
+    position: absolute;
     width: 565px;
     height: 198px;
-    z-index: 1;
+    top: 95px;
+    left: 110px;
+    background: #ffffff;
   }
 }
