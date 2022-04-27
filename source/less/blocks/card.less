@@ -1,5 +1,4 @@
 .card {
-  padding: 20px;
   outline: 3px solid #11f06ea6;
   outline-offset: -3px;
 }
@@ -9,18 +8,59 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.card__description {
-  font-size: 14px;
-  line-height: 14px;
-  .font-style-title();
-  .font-style();
-}
-
+.card__description,
 .card__price {
   font-size: 14px;
   line-height: 14px;
   .font-style-title();
   .font-style();
+}
+
+.card__button-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card__position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+@media (min-width: @tablet-width) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .card__button-link {
+    width: 632px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .card__description,
+  .card__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 }
