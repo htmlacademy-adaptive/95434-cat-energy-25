@@ -1,6 +1,7 @@
 .card {
   outline: 3px solid #11f06ea6;
   outline-offset: -3px;
+  margin: 0 20px;
 }
 
 .card__title {
@@ -61,6 +62,11 @@
 @media (min-width: @desktop-width) {
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .card__button-link {
+    width: 244px;
   }
 }
