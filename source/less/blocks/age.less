@@ -5,3 +5,28 @@
   font-family: inherit;
   text-transform: uppercase;
 }
+
+.age__value {
+  min-width: 172px;
+  height: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .age__value {
+    min-width: 497px;
+    height: 52px;
+  }
+
+  .age__label,
+  .age__value {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .age__value {
+    min-width: 436px;
+  }
+}

@@ -1,4 +1,5 @@
-.weight__label {
+.weight__label,
+.weight__value {
   .form-field-size();
   color: #444444;
   font-family: inherit;
@@ -6,8 +7,26 @@
 }
 
 .weight__value {
-  .form-field-size();
-  color: #444444;
-  font-family: inherit;
-  text-transform: uppercase;
+  min-width: 204px;
+  height: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .weight__value {
+    min-width: 536px;
+    height: 52px;
+  }
+
+  .weight__label,
+  .weight__value {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .weight__value {
+    min-width: 475px;
+  }
 }
