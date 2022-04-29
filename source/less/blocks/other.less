@@ -1,7 +1,8 @@
 .other__wrapper {
   outline: 3px solid #1784f0cc;
   outline-offset: -3px;
-  padding: 20px;
+  //padding: 20px;
+  margin: 5px;
 }
 
 .other__title {
@@ -18,4 +19,52 @@
   color: #000000;
   font-family: inherit;
   text-transform: uppercase;
+}
+
+.other__item {
+  border: none;
+}
+
+.other__list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .other__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .other__wrapper {
+    margin-left: 70px;
+    margin-right: 67px;
+    margin-bottom: 30px;
+  }
+
+  .sugar__title,
+  .water__title,
+  .milk__title,
+  .vitamins__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .other__list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 124px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other__list-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 105px;
+  }
+
+  .other__wrapper {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }

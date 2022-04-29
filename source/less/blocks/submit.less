@@ -1,7 +1,9 @@
 .submit__wrapper {
   outline: 3px solid #ee0f0fcc;
   outline-offset: -3px;
-  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .submit__nessesary-info-line {
@@ -9,4 +11,41 @@
   color: #000000;
   font-size: 14px;
   line-height: 16px;
+}
+
+.submit__button-post {
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .submit__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 62px;
+    margin-left: 70px;
+    margin-right: 67px;
+    margin-bottom: 70px;
+  }
+
+  .submit__button-post {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .submit__nessesary-info-line {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .submit__wrapper {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  .submit__button-post {
+    width: 568px;
+  }
 }

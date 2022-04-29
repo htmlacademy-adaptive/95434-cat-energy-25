@@ -1,6 +1,17 @@
 .control__label {
+  color: #222222;
+}
+
+.control {
   .form-field-size();
   color: #444444;
   font-family: inherit;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .control {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
