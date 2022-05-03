@@ -17,11 +17,11 @@
           src="img/svg/logo-text.svg" width="101" height="18"
           alt="Cat Energy"
         >
-        <button class="main-header__toggle" type="button">
+        <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -196,13 +196,13 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__logo logo">
+        <div class="main-footer__item logo">
           <img class="logo__image"
             src="img/svg/footer-logo-2.svg" width="128" height="24"
               alt="Логотип"
             >
         </div>
-        <div class="main-footer__social social">
+        <div class="main-footer__item social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -227,7 +227,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="main-footer__item copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
@@ -239,5 +239,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

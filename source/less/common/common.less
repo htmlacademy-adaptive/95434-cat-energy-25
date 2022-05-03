@@ -4,7 +4,7 @@ body {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: @background-color-main-white;
   color: #000000;
   text-transform: uppercase;
 }
@@ -17,13 +17,11 @@ img {
 @media (min-width: @tablet-width) {
   body {
     width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
     width: 1440px;
-    // margin: 0 auto;
   }
 }
