@@ -1,35 +1,61 @@
 .contacts__wrapper {
-  outline: 3px solid #2c1a70cc;
+  outline: 3px solid #08e8a9cc;
   outline-offset: -3px;
-  padding: 20px 20px;
   background-color: @background-color-light-grey;
+}
+
+.contacts__detail {
+  width: 320px;
+  height: 112px;
+  margin: 0 auto;
 }
 
 .contacts__invite {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: @text-color-another-black;
   margin: 0;
 }
 
 .contacts__address {
   .font-style();
   .font-style-title();
-  color: #444444;
+  color: @text-color-special;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  width: 139px;
+  height: 60px;
+  padding: 0;
 }
 
 .contacts__wrapper--main {
-  background-color: #ffffff;
+  background-color: @background-color-main-white;
 }
 
 .contacts__item {
   list-style: none;
+  width: 139px;
+  height: 60px;
+  margin: 26px 20px 26px 20px;
+}
+
+.contacts__item:last-child {
+  margin-left: 0;
 }
 
 .contacts__list {
   display: flex;
+  padding: 0;
+  width: 278px;
+  margin: 0 auto;
+}
+
+.contacts__map {
+  display: block;
+  border: none;
+  width: 320px;
+  height: 362px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,17 +66,47 @@
   .contacts__map {
     background: url("../img/map-tablet.jpg") no-repeat;
     height: 400px;
+    width: 768px;
+  }
+
+  .contacts__detail {
+    width: 768px;
+    height: 199px;
   }
 
   .contacts__list {
     justify-content: space-between;
+    width: 628px;
+    height: 87px;
+    padding-top: 60px;
+  }
+
+  .contacts__item {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .contacts__invite {
+    width: 172px;
+    height: 83px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    width: 160px;
+    height: 80px;
+    text-align: right;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__map {
     background: url("../img/map-desctop.jpg") no-repeat;
-    // height: 400px;
+    height: 400px;
+    width: 1440px;
   }
 
   .contacts__wrapper {
@@ -63,6 +119,22 @@
     height: 198px;
     top: 95px;
     left: 110px;
-    background: #ffffff;
+    background: @background-color-main-white;
+  }
+
+  .contacts__list {
+    width: 405px;
+    height: 86px;
+    padding-top: 56px;
+  }
+
+  .contacts__invite {
+    width: 163px;
+  }
+
+  .contacts__address {
+    width: 155px;
+    height: 80px;
+    text-align: left;
   }
 }
