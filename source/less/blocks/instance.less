@@ -2,18 +2,19 @@
   outline: 3px solid #3b08f4cc;
   outline-offset: -3px;
   background-color: @background-color-dark-grey;
-  padding: 80px 20px 20px 20px;
-  margin-top: -80px;
+  padding: 100px 0 40px 0;
+  margin-top: -100px;
 }
 
-// .instance__wrapper-title {
-//   background-color: @background-color-dark-grey;
-// }
+.instance__wrapper-title {
+  padding: 25px 0 40px 20px;
+}
 
 .instance__title {
   font-size: 36px;
   line-height: 40px;
   .font-style-title();
+  margin: 0;
 }
 
 .instance__text {
@@ -21,11 +22,16 @@
   line-height: 18px;
   .font-style-title();
   .font-style();
+  padding: 0 20px;
+  margin: 0;
 }
 
 .instance__slogan {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .instance__number {
@@ -44,6 +50,8 @@
 .instance__list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 20px;
 }
 
 .instance__item {
@@ -57,6 +65,33 @@
 .instance__state-after {
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+}
+
+.instance__image {
+  padding: 0 20px;
+}
+
+.image-cat {
+  display: none;
+}
+
+.instance__wrapper-state {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 55px 0 55px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background-image: url("../img/svg/slider.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 14px;
+    width: 86px;
+    margin-top: 5px;
+    margin-left: 60px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -68,23 +103,39 @@
     margin-top: -100px;
   }
 
+  .instance__wrapper-title {
+    padding: 45px 0 60px 30px;
+  }
+
   .instance__title {
     font-size: 60px;
     line-height: 60px;
-    padding-left: 30px;
   }
 
   .instance__text {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0;
+  }
+
+  .instance__list {
+    padding: 0;
   }
 
   .instance__wrapper-list-slogan {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 54px 30px 250px 30px;
+  }
+
+  .instance__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: right;
+    padding-bottom: 0;
+    width: 174px;
   }
 
   .instance__wrapper-image {
@@ -105,10 +156,6 @@
   .instance__description {
     font-size: 14px;
     line-height: 14px;
-  }
-
-  .instance__slogan {
-    font-size: 20px;
   }
 
   .instance__wrapper-state {

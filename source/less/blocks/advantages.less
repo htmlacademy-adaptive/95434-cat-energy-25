@@ -1,7 +1,6 @@
 .advantages__wrapper {
-  outline: 3px solid #ec9006cc;
-  outline-offset: -3px;
-  padding: 20px;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +9,7 @@
   font-size: 36px;
   line-height: 40px;
   .font-style-title();
-  margin: 0;
+  margin: 20px 0 50px 20px;
 }
 
 .advantages__text {
@@ -18,26 +17,56 @@
   line-height: 18px;
   .font-style-title();
   .font-style();
+  padding: 0 20px;
+  margin: 0;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0 auto;
 }
 
 .advantages__item {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 50px;
 }
 
 @media (min-width: @tablet-width) {
   .advantages__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 105px 40px 30px;
+    border-bottom: 1px solid @border-color-second;
   }
 
   .advantages__item {
     padding: 0;
-    width: 340px;
+    width: 245px;
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .advantages__image {
+    margin: 40px 0;
   }
 
   .advantages__text {
-    margin-bottom: 100px;
-    padding-top: 30px;
+    margin-bottom: 57px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -45,35 +74,44 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 15px 0 32px 30px;
   }
 
   .advantages__item--one {
-    background: url("../img/one.png") no-repeat top;
+    background: url("../img/one.png") no-repeat top right;
     position: relative;
   }
 
   .advantages__item--two {
-    background: url("../img/two.png") no-repeat top;
+    background: url("../img/two.png") no-repeat top right;
     position: relative;
   }
 
   .advantages__item--three {
-    background: url("../img/three.png") no-repeat top;
+    background: url("../img/three.png") no-repeat top right;
     position: relative;
   }
 
   .advantages__item--four {
-    background: url("../img/four.png") no-repeat top;
+    background: url("../img/four.png") no-repeat top right;
     position: relative;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__list {
-    justify-content: space-between;
+    border: none;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: 0 110px;
+    padding: 0;
   }
 
   .advantages__item {
     width: 250px;
+  }
+
+  .advantages__title {
+    margin: 0 0 32px 110px;
   }
 }
