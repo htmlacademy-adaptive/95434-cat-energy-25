@@ -44,6 +44,10 @@
   margin-right: 10px;
 }
 
+.catalog__link:active {
+  opacity: 0.3;
+}
+
 .catalog__wrapper-link {
   border-top: 1px solid @border-color-third;
   padding: 20px 0;
@@ -77,6 +81,20 @@
       height: 200px;
       right: 62px;
       top: 81px;
+    }
+  }
+
+  .catalog__item:nth-child(2) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../img/cat_back_horizont_tablet.png") no-repeat;
+      width: 267px;
+      height: 200px;
+      right: 30px;
+      top: 91px;
     }
   }
 
