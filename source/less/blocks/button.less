@@ -1,6 +1,6 @@
 .button {
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: @button-bg-color;
+  color: @background-color-main-white;
   font-family: inherit;
   text-transform: uppercase;
   border: none;
@@ -9,12 +9,18 @@
   display: block;
   text-align: center;
   margin: 0 auto;
-  //box-sizing: border-box;
   width: 280px;
   height: 40px;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: @button-bg-color-dark;
+}
+
+.button:active {
+  background-color: @button-bg-color-dark;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: @tablet-width) {
