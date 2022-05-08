@@ -214,6 +214,7 @@ img {
     justify-content: space-between;
     padding: 0 105px 40px 30px;
     border-bottom: 1px solid #e6e6e6;
+    counter-reset: counter;
   }
   .advantages__item {
     padding: 0;
@@ -221,6 +222,20 @@ img {
     flex-direction: column;
     margin-left: 0;
     margin-bottom: 0;
+    counter-increment: counter;
+    position: relative;
+  }
+  .advantages__item::after {
+    content: counter(counter);
+    font-family: "Oswald", "Tahoma", sans-serif;
+    width: 134px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    right: 5px;
+    z-index: -1;
   }
   .advantages__item:last-child {
     margin-bottom: 0;
@@ -238,22 +253,6 @@ img {
     font-size: 60px;
     line-height: 60px;
     margin: 15px 0 32px 30px;
-  }
-  .advantages__item--one {
-    background: url("../img/one.png") no-repeat top right;
-    position: relative;
-  }
-  .advantages__item--two {
-    background: url("../img/two.png") no-repeat top right;
-    position: relative;
-  }
-  .advantages__item--three {
-    background: url("../img/three.png") no-repeat top right;
-    position: relative;
-  }
-  .advantages__item--four {
-    background: url("../img/four.png") no-repeat top right;
-    position: relative;
   }
 }
 @media (min-width: 1200px) {
@@ -291,6 +290,7 @@ img {
 }
 .button:active {
   background-color: #5EAA2F;
+  color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   width: 248px;
@@ -1009,6 +1009,9 @@ img {
   width: 87px;
   background-color: #eaeaea;
 }
+.instance__description--weight {
+  width: 77px;
+}
 .instance__list {
   display: flex;
   justify-content: space-between;
@@ -1087,8 +1090,11 @@ img {
   .instance__description {
     font-size: 14px;
     line-height: 14px;
-    width: auto;
+    width: 142px;
     background-color: #ffffff;
+  }
+  .instance__description--weight {
+    width: 114px;
   }
   .instance__wrapper-list-slogan {
     display: flex;
@@ -1153,7 +1159,7 @@ img {
     font-size: 20px;
     line-height: 30px;
     height: 30px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
     padding-top: 15px;
   }
 }
@@ -1183,7 +1189,6 @@ img {
     margin: 70px 0 75px 0;
   }
   .instance__description {
-    width: auto;
     background-color: #f2f2f2;
   }
   .instance__slogan {
