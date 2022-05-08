@@ -54,6 +54,10 @@
   background-color: @background-color-dark-grey;
 }
 
+.instance__description--weight {
+  width: 77px;
+}
+
 .instance__list {
   display: flex;
   justify-content: space-between;
@@ -108,7 +112,7 @@
     padding: 100px 0 0 0;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: @background-color-main-white;
     margin-top: -100px;
   }
 
@@ -146,8 +150,12 @@
   .instance__description {
     font-size: 14px;
     line-height: 14px;
-    width: auto;
+    width: 142px;
     background-color: @background-color-main-white;
+  }
+
+  .instance__description--weight {
+    width: 114px;
   }
 
   .instance__wrapper-list-slogan {
@@ -224,7 +232,7 @@
     font-size: 20px;
     line-height: 30px;
     height: 30px;
-    border-bottom: 1px solid @text-color-main-black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
     padding-top: 15px;
   }
 }
@@ -239,7 +247,7 @@
   }
 
   .instance__wrapper-title {
-    background-color: #ffffff;
+    background-color: @background-color-main-white;
     padding: 43px 0 76px 110px;
   }
 
@@ -260,7 +268,6 @@
   }
 
   .instance__description {
-    width: auto;
     background-color: @background-color-light-grey;
   }
 
