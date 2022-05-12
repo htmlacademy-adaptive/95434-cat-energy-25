@@ -1,15 +1,18 @@
 .main-header {
-  outline: 3px solid #f01d1d;
-  outline-offset: -3px;
+  // outline: 3px solid #f01d1d;
+  // outline-offset: -3px;
   display: flex;
-  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   position: relative;
+  height: 66px;
+}
+
+.main-header__border {
+  border-bottom: 1px solid @border-color-third;
 }
 
 .main-header__logo-wrapper {
-  height: 66px;
   width: 280px;
   display: flex;
   flex-direction: row;
@@ -76,15 +79,19 @@
 @media (min-width: @tablet-width) {
   .main-header {
     width: 708px;
+    height: 76px;
     padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  .main-header__border {
+    border-bottom: none;
+  }
+
   .main-header__logo-wrapper {
     height: 78px; // общая высота margin 42 + 36
     align-items: center;
-    //justify-content: space-between;
     margin-right: 20px;
     padding: 0;
     width: 174px;

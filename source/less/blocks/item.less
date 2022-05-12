@@ -2,19 +2,29 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: @text-color-special-black;
   width: 76px;
   height: 41px;
+  margin: 20px 0 15px 0;
+  text-align: left;
 }
 
 .item__link {
   text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .item__wrapper {
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin: 0;
+}
+
+.feature {
+  margin: 0 auto;
 }
 
 .feature__wrapper {
@@ -31,16 +41,33 @@
   .font-style();
 }
 
+.item__button-link {
+  padding: 10px 94px;
+  margin: 25px 20px;
+}
+
 .item__wrapper-more {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 158px;
+  margin: 25px 0;
+}
+
+.item__link-plus {
+  padding-top: 0;
+}
+
+.item__list-link {
+  text-decoration: none;
 }
 
 .item__title--more {
-  width: 204px;
+  width: auto;
   height: 20px;
+  margin: 0;
   text-align: center;
+  padding: 20px 57px 8px 57px;
 }
 
 .item__slogan {
@@ -48,30 +75,44 @@
   line-height: 16px;
   .font-style-title();
   .font-style();
+  margin: 0;
 }
 
 .show-more {
   background-color: @background-color-light-grey;
-  color: #444444;
+  color: @text-color-special;
+  margin: 0;
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .item__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 73px 36px 33px 36px;
+    padding: 0 37px 33px 37px;
   }
 
   .item__button-link {
-    margin-bottom: 40px;
+    width: 248px;
+    margin: 0 38px 39px 38px;
+  }
+
+  .item__link {
+    padding-top: 0;
+  }
+
+  .item__list {
+    width: 250px;
   }
 
   .item__title {
     font-size: 20px;
     line-height: 24px;
-    width: 174px;
+    width: auto;
     height: 47px;
     text-align: center;
+    padding: 0 20px;
+    margin: 0 35px 0 42px;
   }
 
   .feature__parameter,
@@ -85,13 +126,35 @@
   }
 
   .item__wrapper-more {
-    border: 2px solid #f2f2f2;
-    height: 430px;
+    border: 2px solid @background-color-light-grey;
+    height: 429px;
+    margin: 0 auto;
+  }
+
+  .item__link-plus {
+    padding-top: 0;
+    margin: 52px 62px 50px 62px;
+  }
+
+  .item__title--more {
+    line-height: 22px;
+    width: auto;
+    height: auto;
+    margin: 0 90px 23px 90px;
+    text-align: center;
+    padding: 0;
   }
 
   .item__slogan {
     font-size: 16px;
     line-height: 16px;
+    margin: 0 78px 87px 78px;
+    text-align: center;
+  }
+
+  .show-more {
+    padding: 0;
+    padding-top: 10px;
   }
 }
 

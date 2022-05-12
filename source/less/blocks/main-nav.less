@@ -1,6 +1,6 @@
 .main-nav {
-  outline: 3px solid #1dcccccc;
-  outline-offset: -3px;
+  // outline: 3px solid #1dcccccc;
+  // outline-offset: -3px;
   position: absolute;
   top: 65px;
   width: 100%;
@@ -79,6 +79,7 @@
     padding: 0;
     border: none;
     width: auto;
+    height: 24px;
   }
 
   .main-nav__item--active {
@@ -126,7 +127,7 @@
     line-height: 30px;
   }
 
-  .main-nav__item--active {
+  .main-nav__link--main.main-nav__item--active {
     position: relative;
 
 
@@ -140,5 +141,9 @@
       right: 0;
       bottom: -8px;
     }
+  }
+
+  .main-nav__item {
+    height: 30px;
   }
 }
