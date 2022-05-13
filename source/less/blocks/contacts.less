@@ -57,6 +57,10 @@
   height: 362px;
 }
 
+.contacts__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__map-image {
     display: none;
@@ -71,13 +75,16 @@
   .contacts__detail {
     width: 768px;
     height: 199px;
+    margin: 0;
   }
 
   .contacts__list {
+    flex-direction: row;
     justify-content: space-between;
     width: 628px;
     height: 87px;
-    padding-top: 60px;
+    margin: 0;
+    padding: 56px 70px 55px 70px;
   }
 
   .contacts__item {
@@ -95,9 +102,13 @@
 
   .contacts__address {
     font-size: 16px;
+    text-align: right;
     width: 160px;
     height: 80px;
-    text-align: right;
+  }
+
+  .contacts__br {
+    display: block;
   }
 }
 
@@ -124,7 +135,8 @@
   .contacts__list {
     width: 405px;
     height: 86px;
-    padding-top: 56px;
+    margin: 56px 80px;
+    padding: 0;
   }
 
   .contacts__invite {
