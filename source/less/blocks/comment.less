@@ -1,27 +1,49 @@
 .comment__wrapper {
-  outline: 3px solid #de5b04cc;
-  outline-offset: -3px;
-  margin: 5px;
+  margin: 0;
 }
 
 .comment__title {
   .font-style-title();
   font-size: 24px;
   line-height: 26px;
+  background: @background-color-main-white;
+  margin: 0;
+  width: 121px;
+  padding: 24px 20px 26px 20px;
 }
 
-.area__value {
-  .form-field-size();
-  color: #444444;
-  font-family: inherit;
-  text-transform: uppercase;
-  border: 1px solid #e7e7e7;
-  min-width: 250px;
-  height: 150px;
+.comment__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: @button-bg-color;
+    z-index: -1;
+  }
 }
 
 .comment__area {
   border: none;
+  margin: 12px 20px 0 20px;
+  padding: 0;
+}
+
+.area__value {
+  .form-field-size();
+  color: @text-color-special;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: 1px solid @border-color-first;
+  min-width: 280px;
+  min-height: 150px;
+  padding: 0 12px;
+  margin: 0;
+  box-sizing: border-box;
+  resize: none;
 }
 
 @media (min-width: @tablet-width) {

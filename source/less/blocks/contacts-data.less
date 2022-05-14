@@ -1,7 +1,5 @@
 .contacts-data__wrapper {
-  outline: 3px solid #e8e40bcc;
-  outline-offset: -3px;
-  margin: 5px;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -11,20 +9,32 @@
   .font-style-title();
   font-size: 24px;
   line-height: 26px;
+  background: @background-color-main-white;
+  margin: 0;
+  width: 187px;
+  padding: 26px 14px 35px 20px;
+}
+
+.contacts-data__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    height: 2px;
+    width: 100%;
+    background-color: @button-bg-color;
+    z-index: -1;
+  }
 }
 
 .mail__label,
-.mail__value {
-  .form-field-size();
-  color: #444444;
-  font-family: inherit;
-  text-transform: uppercase;
-}
-
+.mail__value,
 .phone__label,
 .phone__value {
   .form-field-size();
-  color: #444444;
+  color: @text-color-special;
   font-family: inherit;
   text-transform: uppercase;
 }
@@ -32,16 +42,31 @@
 .contacts-data__mail,
 .contacts-data__phone {
   border: none;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.contacts-data__mail {
+  margin-bottom: 14px;
 }
 
 .mail__value {
-  width: 219px;
-  height: 45px;
+  width: 205px;
+  padding: 14px 0 16px 15px;
+  // margin-left: 10px;
+}
+
+.mail__label {
+  width: 50px;
 }
 
 .phone__value {
-  width: 204px;
-  height: 45px;
+  width: 188px;
+  padding: 14px 0 16px 16px;
+}
+
+.phone__label {
+  width: 68px;
 }
 
 @media (min-width: @tablet-width) {
