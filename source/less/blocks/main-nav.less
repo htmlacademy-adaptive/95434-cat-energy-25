@@ -1,6 +1,6 @@
 .main-nav {
-  outline: 3px solid #1dcccccc;
-  outline-offset: -3px;
+  // outline: 3px solid #1dcccccc;
+  // outline-offset: -3px;
   position: absolute;
   top: 65px;
   width: 100%;
@@ -62,6 +62,11 @@
     background-color: inherit;
   }
 
+  .main-nav__wrapper {
+    height: 34px;
+    padding-top: 17px;
+  }
+
   .main-nav--closed {
     display: block;
   }
@@ -70,9 +75,7 @@
     width: 440px;
     display: flex;
     flex-direction: row;
-    height: 66px;
     justify-content: space-between;
-    padding-top: 42px;
   }
 
   .main-nav__item {
@@ -114,7 +117,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 478px;
+    width: 480px;
   }
 
   .main-nav__link--main {
@@ -126,7 +129,7 @@
     line-height: 30px;
   }
 
-  .main-nav__item--active {
+  .main-nav__link--main.main-nav__item--active {
     position: relative;
 
 
@@ -140,5 +143,19 @@
       right: 0;
       bottom: -8px;
     }
+  }
+
+  .main-nav__wrapper {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .main-nav__list {
+    width: 480px;
+  }
+
+  .main-nav__item {
+    height: 30px;
+    margin: 16px 0 14px 0;
   }
 }

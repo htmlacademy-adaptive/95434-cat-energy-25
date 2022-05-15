@@ -1,6 +1,6 @@
 .card {
-  outline: 3px solid #11f06ea6;
-  outline-offset: -3px;
+  padding: 13px 0 20px 0;
+  height: 98px;
   margin: 0 20px;
 }
 
@@ -8,9 +8,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  color: @text-color-special-black;
+  margin: 0 auto;
 }
 
 .card__description,
@@ -22,14 +21,15 @@
 }
 
 .card__button-link {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 0 auto;
+  padding: 10px 94px;
 }
 
 .card__position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 13px 0 15px 0;
 }
 
 
@@ -39,8 +39,9 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 26px 38px 28px 38px;
+    margin: 0;
+    height: auto;
   }
 
   .card__button-link {
@@ -50,6 +51,11 @@
   .card__title {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+  }
+
+  .card__position {
+    margin: 0 0 25px 0;
   }
 
   .card__description,
@@ -63,10 +69,21 @@
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
+    padding: 0;
+    height: 72px;
+  }
+
+  .card__title {
+    margin: 25px 0 0 0;
+  }
+
+  .card__position {
+    margin: 28px 0 0 0;
   }
 
   .card__button-link {
     width: 244px;
+    padding: 7px 26px;
+    margin: 15px 0 15px 55px;
   }
 }

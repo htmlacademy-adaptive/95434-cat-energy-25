@@ -1,20 +1,28 @@
 .age__label,
 .age__value {
   .form-field-size();
-  color: #444444;
+  color: @text-color-special;
   font-family: inherit;
   text-transform: uppercase;
 }
 
+.age__label {
+  width: 109px;
+}
+
 .age__value {
-  min-width: 172px;
-  height: 45px;
+  width: 157px;
+  padding: 13px 0 14px 15px;
+  border: 1px solid @border-color-first;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .age__value {
     min-width: 497px;
-    height: 52px;
+    padding: 10px 0 11px 20px;
   }
 
   .age__label,
@@ -22,6 +30,10 @@
     font-size: 20px;
     line-height: 30px;
     text-align: left;
+  }
+
+  .age__label {
+    width: 119px;
   }
 }
 

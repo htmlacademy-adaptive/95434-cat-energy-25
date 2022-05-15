@@ -1,59 +1,98 @@
 .comment__wrapper {
-  outline: 3px solid #de5b04cc;
-  outline-offset: -3px;
-  margin: 5px;
+  margin: 0;
 }
 
 .comment__title {
   .font-style-title();
   font-size: 24px;
   line-height: 26px;
+  background: @background-color-main-white;
+  margin: 0;
+  width: 121px;
+  padding: 24px 20px 26px 20px;
 }
 
-.area__value {
-  .form-field-size();
-  color: #444444;
-  font-family: inherit;
-  text-transform: uppercase;
-  border: 1px solid #e7e7e7;
-  min-width: 250px;
-  height: 150px;
+.comment__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: @button-bg-color;
+    z-index: -1;
+  }
 }
 
 .comment__area {
   border: none;
+  margin: 12px 20px 0 20px;
+  padding: 0;
+}
+
+.area__value {
+  .form-field-size();
+  color: @text-color-special;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: 1px solid @border-color-first;
+  min-width: 280px;
+  min-height: 150px;
+  padding: 0 12px;
+  margin: 0;
+  box-sizing: border-box;
+  resize: none;
 }
 
 @media (min-width: @tablet-width) {
+  .comment__title-wrapper {
+    width: auto;
+    margin: 0 0 0 -30px;
+
+    &::before {
+      top: 60%;
+    }
+  }
+
   .comment__title {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 0 70px;
+    width: 182px;
+    padding: 0 38px 0 30px;
   }
 
-  .comment__wrapper {
-    margin-left: 70px;
-    margin-right: 60px;
+  .comment__area {
+    margin: 76px 70px 65px 70px;
   }
 
   .area__value {
     font-size: 20px;
     line-height: 30px;
-    width: 631px;
-    height: 174px;
-    padding: 0;
+    min-width: 631px;
+    min-height: 174px;
+    padding: 10px 0 0 19px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .area__value {
-    font-size: 20px;
-    line-height: 30px;
-    width: 1220px;
-    padding: 0;
+  .comment__title-wrapper {
+    width: auto;
+    margin: 0;
   }
 
-  .comment__wrapper {
-    margin-left: 110px;
-    margin-right: 110px;
+  .comment__title {
+    margin: 0 0 0 70px;
+    padding: 0 40px 0 40px;
+  }
+
+  .comment__area {
+    margin: 76px 1100px 67px 110px;
+  }
+
+  .area__value {
+    min-width: 1220px;
   }
 }

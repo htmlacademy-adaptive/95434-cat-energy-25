@@ -1,70 +1,162 @@
 .other__wrapper {
-  outline: 3px solid #1784f0cc;
-  outline-offset: -3px;
-  //padding: 20px;
-  margin: 5px;
+  margin: 0;
 }
 
-.other__title {
+.other__title-main {
   .font-style-title();
   font-size: 24px;
   line-height: 26px;
+  background: @background-color-main-white;
+  margin: 0;
+  width: 141px;
+  padding: 23px 20px 25px 20px;
 }
 
-.sugar__title,
-.water__title,
-.milk__title,
-.vitamins__title {
+.other__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: @button-bg-color;
+    z-index: -1;
+  }
+}
+
+.other__title {
   .form-field-size();
-  color: #000000;
+  color: @text-color-main-black;
   font-family: inherit;
   text-transform: uppercase;
+  padding-left: 12px;
 }
 
 .other__item {
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .other__list-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 9px 20px 0 20px;
+}
+
+.other__mark {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @border-special-grey;
+  box-sizing: border-box;
+  background-color: @background-color-main-white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../img/checkbox.png") no-repeat;
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid @input-hover;
+  }
+}
+
+.other__field:checked + .other__mark::before {
+  display: block;
+}
+
+.other__field:disabled + .other__mark,
+.other__field:disabled ~ .other__title {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
-  .other__title {
+  .other__title-wrapper {
+    width: auto;
+    margin: 0 0 0 -30px;
+
+    &::before {
+      top: 60%;
+    }
+  }
+
+  .other__title-main {
     font-size: 36px;
     line-height: 36px;
-  }
-
-  .other__wrapper {
-    margin-left: 70px;
-    margin-right: 67px;
-    margin-bottom: 30px;
-  }
-
-  .sugar__title,
-  .water__title,
-  .milk__title,
-  .vitamins__title {
-    font-size: 20px;
-    line-height: 30px;
+    margin: 0 70px 0 70px;
+    width: 211px;
+    padding: 0 41px 0 30px;
   }
 
   .other__list-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 124px;
+    margin: 57px 133px 22px 70px;
+  }
+
+  .other__item {
+    margin-bottom: 32px;
+  }
+
+  .other__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .other__mark {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 19px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../img/checkbox-tablet.png") no-repeat;
+      display: none;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .other__list-wrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 105px;
+  .other__title-wrapper {
+    width: auto;
+    margin: 0;
   }
 
-  .other__wrapper {
-    margin-left: 110px;
-    margin-right: 110px;
+  .other__title-main {
+    margin: 0 70px 0 70px;
+    padding: 0 40px 0 40px;
+  }
+
+  .other__list-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+    margin: 57px 133px 66px 110px;
+  }
+
+  .other__item {
+    margin-bottom: 0;
   }
 }
