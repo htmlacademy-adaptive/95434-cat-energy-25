@@ -53,7 +53,6 @@
 .mail__value {
   width: 205px;
   padding: 14px 0 16px 15px;
-  // margin-left: 10px;
 }
 
 .mail__label {
@@ -70,13 +69,35 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts-data__title-wrapper {
+    width: auto;
+    margin: 0 0 0 -30px;
+
+    &::before {
+      top: 60%;
+    }
+  }
+
+  .contacts-data__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 75px 0 0 70px;
+    width: 512px;
+    padding: 0 42px 0 30px;
+  }
+
   .contacts-data__wrapper {
-    width: 630px;
-    height: 124px;
-    padding: 5px;
-    margin: 0 70px;
-    margin-top: 70px;
-    margin-bottom: 10px;
+    padding: 0;
+    margin: 76px 70px 65px 70px;
+  }
+
+  .contacts-data__mail,
+  .contacts-data__phone {
+    margin: 0;
+  }
+
+  .contacts-data__mail {
+    margin-bottom: 20px;
   }
 
   .phone__label,
@@ -87,49 +108,59 @@
     line-height: 30px;
   }
 
+  .mail__label {
+    width: 63px;
+  }
+
   .mail__value {
-    margin-left: 20px;
-    // width: 551px;
-    // height: 52px;
+    width: 529px;
+    margin-left: 10px;
+    padding: 10px 0 10px 21px;
+  }
+
+  .phone__label {
+    width: 85px;
   }
 
   .phone__value {
-    margin-left: 20px;
-    // width: 535px;
-    // height: 52px;
-  }
-
-  .contacts-data__title {
-    font-size: 36px;
-    line-height: 36px;
-    margin-left: 70px;
+    width: 508px;
+    margin-left: 10px;
+    padding: 10px 0 10px 21px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts-data__wrapper {
-    //width: 100%;
-    padding: 5px;
-    margin: 0 70px;
-    margin-top: 75px;
-    margin-bottom: 65px;
-    flex-direction: row;
-    //justify-content: space-between;
-    margin-left: 110px;
-    margin-right: 110px;
-  }
-
-  .mail__value {
-    min-width: 486px;
-    height: 52px;
-  }
-
-  .phone__value {
-    min-width: 472px;
-    height: 52px;
+  .contacts-data__title-wrapper {
+    width: auto;
+    margin: 0;
   }
 
   .contacts-data__title {
-    margin-left: 110px;
+    margin: 69px 0 76px 70px;
+    padding: 0 40px 0 40px;
+  }
+
+  .contacts-data__wrapper {
+    padding: 0;
+    margin: 0 110px 67px 110px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .mail__value {
+    width: 485px;
+    margin-left: 10px;
+    padding: 10px 0 10px 19px;
+  }
+
+  .phone__value {
+    width: 472px;
+    margin-left: 10px;
+    padding: 10px 0 10px 18px;
+  }
+
+  .contacts-data__mail {
+    margin-bottom: 0;
   }
 }

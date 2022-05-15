@@ -47,22 +47,31 @@
 }
 
 @media (min-width: @tablet-width) {
-  .data__action-wrapper {
+  .data__wrapper {
     width: 630px;
-    height: 196px;
-    padding: 0;
     margin: 0 70px;
+  }
+
+  .data__action-wrapper {
+    padding: 25px 0 25px 28px;
     margin-top: 70px;
+    border-bottom: none;
+    border: 1px solid @border-color-first;
   }
 
   .data__name-wrapper {
-    width: 630px;
-    margin: 0 70px;
+    padding: 0;
+    border: none;
+  }
+
+  .data__name {
+    margin: 0 0 20px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .data__wrapper {
+    width: 1220px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,7 +82,6 @@
 
   .data__action-wrapper {
     width: 570px;
-    padding: 0;
     margin: 0;
   }
 
