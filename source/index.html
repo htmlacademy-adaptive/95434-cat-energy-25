@@ -9,12 +9,18 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__logo-wrapper">
-        <img class="main-header__logo-image"
-          src="img/svg/logo-img-mobile.svg" width="33" height="38"
-          alt="Кэт Энерджи"
-        >
+        <a class="main-header__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/header-logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo/logo-tablet.svg">
+            <img class="main-header__logo-image"
+              src="img/header-logo/logo-img-mobile.svg" width="33" height="38"
+              alt="Кэт Энерджи"
+            >
+          </picture>
+        </a>
         <img class="main-header__logo-text"
-          src="img/svg/logo-text.svg" width="101" height="18"
+          src="img/header-logo/logo-text.svg" width="101" height="18"
           alt="Cat Energy"
         >
         <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
@@ -42,14 +48,27 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Кэт энерджи — правильная кошачья еда</h1>
-      <section class="program">
+      <section class="program program--background">
         <div class="program__wrapper">
             <h2 class="program__title">Функциональное<br>питание для котов</h2>
             <p class="program__slogan">Занялся собой? Займись котом!</p>
-            <img class="program__image"
-              src="img/index-can-mobile-1.png" width="280" height="270"
-              alt="Корм Кэт Энерджи"
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/program/index-can-desctop@1x.webp 1x, img/program/index-can-desctop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/program/index-can-tablet@1x.webp 1x, img/program/index-can-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/program\/ndex-can-mobile@1x.webp 1x, img/program/index-can-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/program/index-can-desctop@1x.png 1x, img/program/index-can-desctop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/program/index-can-tablet@1x.png 1x, img/program/index-can-tablet@2x.png 2x">
+              <img class="program__image"
+                src="img/program/index-can-mobile@1x.png"
+                srcset="img/program/index-can-mobile@2x.png 2x"
+                width="280" height="270" alt="Корм Кэт Энерджи"
             >
+            </picture>
             <a class="program__button button" href="form.html"
             aria-label="Подобрать программу питания для кота">Подобрать программу</a>
         </div>
@@ -60,36 +79,24 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <img class="catalog__image"
-                src="img/cat_back.png" width="50" height="50"
+                src="img/catalog/cat_back.png" width="50" height="50"
                 alt="Гордая кошка"
               >
               <h3 class="catalog__title">Похудение</h3>
               <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <div class="catalog__wrapper-link">
                 <a class="catalog__link" href="#">Каталог Slim</a>
-                <a class="catalog__link-arrow" href="#">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-                    </svg>
-                </a>
               </div>
             </li>
             <li class="catalog__item">
               <img class="catalog__image"
-                src="img/cat_back_horizont.png" width="67" height="50"
+                src="img/catalog/cat_back_horizont.png" width="67" height="50"
                 alt="Крадущаяся кошка"
               >
               <h3 class="catalog__title">Набор массы</h3>
               <p class="catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <div class="catalog__wrapper-link">
                 <a class="catalog__link" href="#">Каталог Pro</a>
-                <a class="catalog__link-arrow" href="#">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-                    </svg>
-                </a>
               </div>
             </li>
           </ul>

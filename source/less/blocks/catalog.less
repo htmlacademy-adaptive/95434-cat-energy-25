@@ -1,15 +1,11 @@
 .catalog__wrapper {
   padding: 0;
   margin: 0 auto;
-  outline: 3px solid #f0e403fa;
-  outline-offset: -3px;
 }
 
 .catalog__item {
   background-color: @background-color-light-grey;
   margin: 20px 20px 0 20px;
-  outline: 3px solid #3bda36cc;
-  outline-offset: -3px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -41,12 +37,35 @@
   line-height: 16px;
   color: @text-color-main-black;
   text-decoration: none;
-  margin-right: 10px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background-image: url("../img/catalog/arrow_short.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 10px;
+    content: "";
+    left: 101px;
+    top: 9px;
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/catalog/arrow_long.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
-.catalog__link:active {
-  opacity: 0.3;
-}
 
 .catalog__wrapper-link {
   border-top: 1px solid @border-color-third;
@@ -73,10 +92,11 @@
     height: 372px;
     position: relative;
 
+
     &::before {
       position: absolute;
       content: "";
-      background: url("../img/cat_back_tablet.png") no-repeat;
+      background: url("../img/catalog/cat_back_tablet.png") no-repeat;
       width: 200px;
       height: 200px;
       right: 62px;
@@ -90,7 +110,7 @@
     &::before {
       position: absolute;
       content: "";
-      background: url("../img/cat_back_horizont_tablet.png") no-repeat;
+      background: url("../img/catalog/cat_back_horizont_tablet.png") no-repeat;
       width: 267px;
       height: 200px;
       right: 30px;
@@ -121,6 +141,11 @@
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      left: 125px;
+      top: 10px;
+    }
   }
 
   .catalog__wrapper-link {
@@ -139,23 +164,41 @@
 
   .catalog__item {
     margin: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+    // flex-direction: row;
+    // flex-wrap: wrap;
     width: 570px;
     position: relative;
 
     &::before {
-      display: none;
+      background: url("../img/catalog/cat_back_desctop.png") no-repeat;
+      width: 100px;
+      height: 106px;
+      left: 52px;
+      top: 41px;
+    }
+  }
+
+  .catalog__item:nth-child(2) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../img/catalog/cat_back_horizont_desctop.png") no-repeat;
+      width: 134px;
+      height: 100px;
+      left: 33px;
+      top: 47px;
     }
   }
 
   .catalog__image {
-    display: list-item;
-    margin: 50px 0 0 52px;
+    display: none;
   }
 
+
   .catalog__title {
-    margin: 73px 0 73px 60px;
+    margin: 73px 0 73px 214px;
   }
 
   .catalog__text {
@@ -165,5 +208,12 @@
 
   .catalog__wrapper-link {
     margin: 23px 0 60px 52px;
+  }
+
+  .catalog__link {
+    &::before {
+      left: 133px;
+      top: 10px;
+    }
   }
 }
