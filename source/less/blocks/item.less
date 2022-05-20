@@ -172,11 +172,12 @@
 
   .item__button-link {
     width: 248px;
-    margin: 0 38px 39px 38px;
+    margin: 0 38px 40px 38px;
   }
 
   .item__list {
     width: 250px;
+    margin-top: 40px;
   }
 
   .item__title {
@@ -186,12 +187,12 @@
     height: 47px;
     text-align: center;
     padding: 0 20px;
-    margin: 0 35px 20px 42px;
+    margin: 0 35px 25px 42px;
   }
 
   .item__image-wrapper {
     height: 177px;
-    margin-top: -47px;
+    margin-top: -62px;
   }
 
   .item__image {
@@ -199,43 +200,49 @@
     position: relative;
 
     &--first {
-      top: -14px;
+      top: 20px;
+      left: 1px;
       width: 161px;
       height: 172px;
     }
 
     &--second {
-      top: -40px;
+      top: -15px;
+      left: 1px;
       width: 168px;
       height: 206px;
     }
 
     &--third {
-      top: -13px;
+      top: 15px;
+      left: 1px;
       width: 163px;
       height: 174px;
     }
 
     &--fourth {
-      top: -39px;
+      top: -10px;
+      left: 2px;
       width: 168px;
       height: 200px;
     }
 
     &--fifth {
-      top: -11px;
+      top: 18px;
+      left: 1px;
       width: 161px;
       height: 171px;
     }
 
     &--sixth {
-      top: -40px;
+      top: -10px;
+      left: 1px;
       width: 168px;
       height: 200px;
     }
 
     &--seventh {
-      top: -14px;
+      top: 14px;
       width: 163px;
       height: 174px;
     }
@@ -248,13 +255,18 @@
   }
 
   .feature__wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     border-bottom: 1px solid @border-special-grey;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+  }
+
+  .feature__wrapper:last-child {
+    margin-bottom: 0;
   }
 
   .item__wrapper-more {
-    border: 2px solid @background-color-light-grey;
+    outline: 2px solid @background-color-light-grey;
+    outline-offset: -2px;
     height: 430px;
     margin: 0 auto;
     background-image: none;
@@ -276,7 +288,7 @@
     line-height: 22px;
     width: auto;
     height: auto;
-    margin: 0 0 23px 0;
+    margin: 0 0 33px 0;
     text-align: center;
     padding: 153px 62px 0 62px;
   }
@@ -284,7 +296,7 @@
   .item__slogan {
     font-size: 16px;
     line-height: 16px;
-    margin: 0 78px 80px 78px;
+    margin: 0 78px 87px 78px;
     text-align: center;
   }
 
@@ -314,33 +326,50 @@
 
   .item__image-wrapper {
     height: 177px;
-    margin-top: -47px;
+    margin-top: -55px;
   }
 
   .item__image {
     padding-left: 0;
     position: relative;
 
+    &--first {
+      top: 0;
+    }
 
     &--second {
-      left: 5px;
+      top: -28px;
+      left: 2px;
       width: 172px;
       height: 202px;
     }
 
+    &--third {
+      top: -5px;
+    }
+
     &--fourth {
-      left: 5px;
+      top: -25px;
+      left: 2px;
       width: 172px;
       height: 196px;
+    }
+
+    &--fifth {
+      top: -5px;
     }
 
     &--sixth {
-      left: 5px;
+      top: -20px;
+      left: 1px;
       width: 172px;
       height: 196px;
     }
-  }
 
+    &--seventh {
+      top: -2px;
+    }
+  }
 
   .item__button-link {
     width: 168px;
