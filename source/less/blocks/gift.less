@@ -16,9 +16,17 @@
 
 .gift__wrapper {
   padding: 0;
-  background: url("../img/cat_in_bag_main.png") no-repeat;
+  background: url("../img/gift/cat_in_bag_main.png") no-repeat;
   margin: 35px 20px;
   height: 290px;
+  background-color: @wrapper;
+}
+
+@media (min-resolution: 2dppx) {
+  .gift__wrapper {
+    background: url("../img/gift/cat_in_bag_main@2x.png") no-repeat;
+    background-size: 280px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -27,8 +35,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: url("../img/cat-in-bag-tablet.jpg") no-repeat;
+    background: url("../img/gift/cat-in-bag-tablet.png") no-repeat;
     height: 200px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift__wrapper {
+      background: url("../img/gift/cat-in-bag-tablet@2x.png") no-repeat;
+      background-size: 707px auto;
+    }
   }
 
   .gift__text {
@@ -43,12 +58,19 @@
 @media (min-width: @desktop-width) {
   .gift__wrapper {
     outline-offset: -3px;
-    background: url("../img/cat-in-bag-desctop.jpg") no-repeat;
+    background: url("../img/gift/cat-in-bag-desctop.png") no-repeat;
     margin: 0;
     width: 245px;
     height: 289px;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift__wrapper {
+      background: url("../img/gift/cat-in-bag-desctop@2x.png") no-repeat;
+      background-size: auto 290px;
+    }
   }
 
   .gift__icon {

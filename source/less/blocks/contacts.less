@@ -1,6 +1,4 @@
 .contacts__wrapper {
-  // outline: 3px solid #08e8a9cc;
-  // outline-offset: -3px;
   background-color: @background-color-light-grey;
 }
 
@@ -55,6 +53,9 @@
   border: none;
   width: 320px;
   height: 362px;
+  background-image: url("../img/map/map_mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 362px;
 }
 
 .contacts__br {
@@ -67,7 +68,8 @@
   }
 
   .contacts__map {
-    background: url("../img/map-tablet.jpg") no-repeat;
+    background-image: url("../img/map/map-tablet.jpg");
+    background-repeat: no-repeat;
     height: 400px;
     width: 768px;
   }
@@ -114,7 +116,8 @@
 
 @media (min-width: @desktop-width) {
   .contacts__map {
-    background: url("../img/map-desctop.jpg") no-repeat;
+    background-image: url("../img/map/map-desctop.jpg");
+    background-repeat: no-repeat;
     height: 400px;
     width: 1440px;
   }
