@@ -13,17 +13,21 @@
   height: 40px;
   text-decoration: none;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @button-bg-color-dark;
+  }
+
+  &:active {
+    background-color: @button-bg-color-dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.button:hover {
-  background-color: @button-bg-color-dark;
-}
-
-.button:active {
-  background-color: @button-bg-color-dark;
-  color: rgba(255, 255, 255, 0.3);
-}
 
 @media (min-width: @tablet-width) {
-  width: 248px;
+  .button {
+    width: 248px;
+  }
 }

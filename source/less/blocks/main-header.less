@@ -1,6 +1,4 @@
 .main-header {
-  // outline: 3px solid #f01d1d;
-  // outline-offset: -3px;
   display: flex;
   width: 320px;
   margin: 0 auto;
@@ -20,6 +18,19 @@
   align-items: center;
   padding: 14px 20px;
   box-sizing: border-box;
+}
+
+.main-header__logo-link {
+  cursor: pointer;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-text {
@@ -93,12 +104,18 @@
     height: 50px;
     align-items: center;
     margin-right: 20px;
+    margin-top: 5px;
     padding: 0;
     width: 174px;
   }
 
   .main-header__logo-text {
-    margin-left: 0;
+    display: none;
+  }
+
+  .main-header__logo-image {
+    width: 174px;
+    height: 52px;
   }
 
   .main-header__toggle {
@@ -110,6 +127,17 @@
   .main-header {
     width: 1221px;
     height: 60px;
-    padding: 54px 110px 0 110px;
+    padding: 34px 110px 0 110px;
+  }
+
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
+    padding-left: 20px;
+  }
+
+
+  .main-header__logo-text {
+    display: none;
   }
 }

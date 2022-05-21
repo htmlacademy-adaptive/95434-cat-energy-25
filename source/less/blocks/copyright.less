@@ -10,6 +10,10 @@
 
 .copyright__icon {
   padding-top: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright {
@@ -18,6 +22,14 @@
   justify-content: space-between;
   height: 78px;
   margin: 0 auto;
+}
+
+.copyright__image {
+  fill: @html-academy;
+
+  &:hover {
+    fill: @button-bg-color;
+  }
 }
 
 @media (min-width: @tablet-width) {

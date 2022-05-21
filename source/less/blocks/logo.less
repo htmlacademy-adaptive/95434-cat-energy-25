@@ -7,6 +7,16 @@
   padding-left: 76px;
 }
 
+.logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .logo {
     height: 0;
@@ -15,10 +25,4 @@
   .logo__image {
     padding: 0;
   }
-}
-
-@media (min-width: @desktop-width) {
-  // .logo__image {
-  //   padding-top: 55px;
-  // }
 }
