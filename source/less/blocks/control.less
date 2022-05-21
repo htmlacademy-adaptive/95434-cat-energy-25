@@ -55,6 +55,10 @@
   display: block;
 }
 
+.control__field:focus + .control__mark {
+  outline: 1px solid @input-hover;
+}
+
 .control__field:disabled + .control__mark,
 .control__field:disabled ~ .control__text {
   opacity: 0.3;

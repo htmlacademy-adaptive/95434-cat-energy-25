@@ -35,7 +35,6 @@
 }
 
 .other__item {
-  border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
@@ -49,6 +48,7 @@
   display: flex;
   flex-direction: column;
   margin: 9px 20px 0 20px;
+  border: none;
 }
 
 .other__mark {
@@ -80,6 +80,10 @@
 
 .other__field:checked + .other__mark::before {
   display: block;
+}
+
+.other__field:focus + .other__mark {
+  outline: 1px solid @input-hover;
 }
 
 .other__field:disabled + .other__mark,
