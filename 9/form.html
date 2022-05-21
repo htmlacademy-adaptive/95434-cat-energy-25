@@ -39,15 +39,15 @@
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html"
-              aria-label="Перейти на главную страницу">Главная</a>
+                aria-label="Перейти на главную страницу">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html"
-              aria-label="Перейти на страницу каталога продукции">Каталог продукции</a>
+                aria-label="Перейти на страницу каталога продукции">Каталог продукции</a>
             </li>
-            <li class="main-nav__item main-nav__item--active" href="#"
-            aria-label="Перейти на страницу подбора программы">
-              <a class="main-nav__link">Подбор программы</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#"
+                aria-label="Перейти на страницу подбора программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -62,23 +62,23 @@
           </div>
           <section class="ad-form__input-data data">
             <div class="data__wrapper">
-              <div class="data__name-wrapper">
-                <fieldset class="data__name name">
+              <fieldset class="data__name-wrapper">
+                <div class="data__name name">
                   <label class="name__label" for="name">имя:<sup>*</sup></label>
                   <input class="name__value data__input" id="name" name="name" type="text" placeholder="БАРСИК" required
                     aria-label="Ввести имя питомца">
-                </fieldset>
-                <fieldset class="data__name weight">
+                </div>
+                <div class="data__name weight">
                   <label class="weight__label" for="weight">вес (кг):<sup>*</sup></label>
                   <input class="weight__value data__input" id="weight" name="weight" type="text"  placeholder="7" required
                     aria-label="Ввести вес питомца">
-                </fieldset>
-                <fieldset class="data__name age">
+                </div>
+                <div class="data__name age">
                   <label class="age__label" for="age">возраст (лет):</label>
                   <input class="age__value" id="age" name="age" type="text"
                     placeholder="7" aria-label="Ввести возраст питомца">
-                </fieldset>
-              </div>
+                </div>
+              </fieldset>
               <div class="data__action-wrapper">
                 <fieldset class="data__action filter">
                   <ul class="filter__list">
@@ -86,7 +86,7 @@
                       <label class="control__label">
                         <input class="visually-hidden control__field" name="control" type="radio" checked
                           aria-label="Выбрать программу по похудению">
-                        <span class="control__mark" tabindex="0"></span>
+                        <span class="control__mark"></span>
                         <span class="control__text">похудение</span>
                       </label>
                     </li>
@@ -94,7 +94,7 @@
                       <label class="control__label">
                         <input class="visually-hidden control__field" name="control" type="radio"
                         aria-label="Выбрать программу по набору массы">
-                        <span class="control__mark" tabindex="0"></span>
+                        <span class="control__mark"></span>
                         <span class="control__text">набор массы</span>
                       </label>
                     </li>
@@ -102,7 +102,7 @@
                       <label class="control__label">
                         <input class="visually-hidden control__field" name="control" type="radio"
                           aria-label="Выбрать этот пункт, если нужен совет по питанию для кота">
-                        <span class="control__mark" tabindex="0"></span>
+                        <span class="control__mark"></span>
                         <span class="control__text">не знаю (нужен ваш совет)</span>
                       </label>
                     </li>
@@ -173,43 +173,41 @@
               <div class="other__title-wrapper">
                 <h2 class="other__title-main additional-titile">Дополнительно</h2>
               </div>
-              <div class="other__list-wrapper">
-                <fieldset class="other__item">
+              <fieldset class="other__list-wrapper">
+                <div class="other__item">
                   <label class="other__label">
                     <input class="visually-hidden other__field" name="sugar" type="checkbox" aria-label="Указать сахарозаменитель" checked>
-                    <span class="other__mark" tabindex="0"></span>
+                    <span class="other__mark"></span>
                     <span class="other__title">сахарозаменитель</span>
                   </label>
-                </fieldset>
-                <fieldset class="other__item">
+                </div>
+                <div class="other__item">
                   <label class="other__label">
                     <input class="visually-hidden other__field" name="water" type="checkbox"  aria-label="Указать питьевую воду">
-                    <span class="other__mark" tabindex="0"></span>
+                    <span class="other__mark"></span>
                     <span class="other__title">питьевая вода</span>
                   </label>
-                </fieldset>
-                <fieldset class="other__item">
+                </div>
+                <div class="other__item">
                   <label class="other__label">
                     <input class="visually-hidden other__field" name="milk" type="checkbox"  aria-label="Указать молоко">
-                    <span class="other__mark" tabindex="0"></span>
+                    <span class="other__mark"></span>
                     <span class="other__title">молоко</span>
                   </label>
-                </fieldset>
-                <fieldset class="other__item">
+                </div>
+                <div class="other__item">
                   <label class="other__label">
                     <input class="visually-hidden other__field" name="vitamins" type="checkbox" aria-label="Указать витамины">
-                    <span class="other__mark" tabindex="0"></span>
+                    <span class="other__mark"></span>
                     <span class="other__title">витамины</span>
                     </label>
-                </fieldset>
-              </div>
+                </div>
+              </fieldset>
             </div>
           </section>
           <section class="ad-form__submit submit">
             <div class="submit__wrapper">
-              <fieldset class="submit__button-post button">
-                <a class="button__submit" type="submit" aria-label="Отправить заявку">отправить заявку</a>
-              </fieldset>
+              <a class="submit__button button" type="submit" href="#" aria-label="Отправить заявку">отправить заявку</a>
               <span class="submit__nessesary-info-line">
                 <sup>*</sup> - Обязательные поля
               </span>
