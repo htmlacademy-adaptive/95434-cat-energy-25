@@ -32,7 +32,7 @@
   padding: 0;
 }
 
-.area__value {
+.comment__value {
   .form-field-size();
   color: @text-color-special;
   font-family: inherit;
@@ -44,6 +44,15 @@
   margin: 0;
   box-sizing: border-box;
   resize: none;
+
+  &:hover {
+    border: 1px solid @border-special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid @text-color-special;
+    border: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -68,7 +77,7 @@
     margin: 76px 70px 65px 70px;
   }
 
-  .area__value {
+  .comment__value {
     font-size: 20px;
     line-height: 30px;
     min-width: 631px;
@@ -92,7 +101,7 @@
     margin: 76px 1100px 67px 110px;
   }
 
-  .area__value {
+  .comment__value {
     min-width: 1220px;
   }
 }

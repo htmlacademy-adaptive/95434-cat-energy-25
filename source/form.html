@@ -12,7 +12,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header main-header__border">
+    <header class="main-header main-header--border">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
           <picture>
@@ -44,7 +44,7 @@
               <a class="main-nav__link" href="catalog.html"
                 aria-label="Перейти на страницу каталога продукции">Каталог продукции</a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item main-nav__link--active">
               <a class="main-nav__link" href="#"
                 aria-label="Перейти на страницу подбора программы">Подбор программы</a>
             </li>
@@ -65,17 +65,17 @@
               <fieldset class="data__name-wrapper">
                 <div class="data__name name">
                   <label class="name__label" for="name">имя:<sup>*</sup></label>
-                  <input class="name__value data__input" id="name" name="name" type="text" placeholder="БАРСИК" required
+                  <input class="name__value data-input" id="name" name="name" type="text" placeholder="БАРСИК" required
                     aria-label="Ввести имя питомца">
                 </div>
                 <div class="data__name weight">
                   <label class="weight__label" for="weight">вес (кг):<sup>*</sup></label>
-                  <input class="weight__value data__input" id="weight" name="weight" type="text"  placeholder="7" required
+                  <input class="weight__value data-input" id="weight" name="weight" type="text"  placeholder="7" required
                     aria-label="Ввести вес питомца">
                 </div>
                 <div class="data__name age">
                   <label class="age__label" for="age">возраст (лет):</label>
-                  <input class="age__value" id="age" name="age" type="text"
+                  <input class="age__value data-input" id="age" name="age" type="text"
                     placeholder="7" aria-label="Ввести возраст питомца">
                 </div>
               </fieldset>
@@ -141,9 +141,8 @@
               <div class="comment__title-wrapper">
                 <h2 class="comment__title">Комментарий</h2>
               </div>
-              <fieldset class="comment__area area">
-                <label class="area__label"></label>
-                <textarea class="area__value" id="description" name="description"
+              <fieldset class="comment__area">
+                <textarea class="comment__value" id="description" name="description"
                   aria-label="Рассказать обо всех повадках кота">Расскажите обо всех повадках кота
                 </textarea>
               </fieldset>
@@ -268,7 +267,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти по ссылке на сайт HTML Academy">
             HTML Academy
           </a>
-          <a class="copyright__icon" href="#"
+          <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Перейти по ссылке на сайт HTML Academy">
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
