@@ -1,4 +1,4 @@
-.program {
+.program__wrapper {
   padding: 0;
   margin: 0;
   color: @background-color-main-white;
@@ -10,7 +10,7 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .program {
+  .program__wrapper {
     &--background {
       background: url("../img/program/cat_green_mobile_main@2x.png") no-repeat;
       background-size: 320px auto;
@@ -55,19 +55,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .program {
+  .program__wrapper {
     color: @text-color-main-black;
     width: 768px;
     height: 842px;
+    position: relative;
 
     &--background {
       background-position: 2000px;
       overflow: hidden;
     }
-  }
-
-  .program__wrapper {
-    position: relative;
   }
 
   .program__title {
@@ -106,28 +103,30 @@
 
 @media (min-width: @desktop-width) {
   .program {
+    width: 100vw;
+    height: 694px;
+    background: linear-gradient(90deg, @background-color-main-white 50%, rgba(104, 183, 56, 0.85) 50%);
+    left: 0;
+  }
+
+  .program__wrapper {
     margin-top: -95px;
     height: 694px;
     width: 1440px;
-    background: linear-gradient(90deg, @background-color-main-white 50%, @button-bg-color 50%);
+    position: relative;
 
     &--background {
       background: url("../img/program/cat_green_desctop.png") no-repeat right top;
-      background-size: 694px 720px;
     }
   }
 
   @media (min-resolution: 2dppx) {
-    .program {
+    .program__wrapper {
       &--background {
         background: url("../img/program/cat_green_desctop@2x.png") no-repeat right top;
         background-size: 720px auto;
       }
     }
-  }
-
-  .program__wrapper {
-    position: relative;
   }
 
   .program__image {

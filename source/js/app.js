@@ -1,8 +1,10 @@
 const mainNav = document.querySelector('.main-nav');
 const mainNavToggle = document.querySelector('.main-header__toggle');
+const mainConteiner = document.querySelector('.main-container');
 
 mainNav.classList.remove('main-nav--nojs');
 mainNavToggle.classList.remove('main-header__toggle--nojs');
+mainConteiner.classList.remove('main-container--nojs');
 
 mainNavToggle.addEventListener('click', handleChangeMenuButton);
 

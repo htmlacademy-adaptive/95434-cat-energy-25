@@ -2,10 +2,11 @@
   font-size: 24px;
   line-height: 24px;
   .font-style-title();
-  background: @background-color-main-white;
+  background-color: @background-color-main-white;
   margin: 0;
   width: 226px;
   padding: 25px 20px 35px 20px;
+  display: inline-block;
 }
 
 .additional-products__list {
@@ -32,7 +33,7 @@
     position: absolute;
     top: 50%;
     height: 2px;
-    width: 100%;
+    width: 100vw;
     background-color: @button-bg-color;
     z-index: -1;
   }
@@ -42,14 +43,23 @@
   .additional-products__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 37px;
     width: 338px;
-    padding: 68px 30px 80px 30px;
+    padding: 68px 30px 80px 37px;
   }
 
   .additional-products__title-wrapper {
     width: auto;
-    margin: 0 0 0 -30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      width: 1000%;
+      background-color: @button-bg-color;
+      z-index: -1;
+      right: -30px;
+    }
   }
 
   .additional-products__wrapper {
@@ -73,16 +83,11 @@
 @media (min-width: @desktop-width) {
   .additional-products__title {
     padding: 75px 40px 81px 40px;
-    margin-left: 70px;
+    margin-left: -40px;
   }
 
   .additional-products__wrapper {
     margin: 0;
-  }
-
-  .additional-products__title-wrapper {
-    margin-right: -420px;
-    margin-left: -110px;
   }
 
   .additional-gift__wrapper {
