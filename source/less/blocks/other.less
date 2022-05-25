@@ -10,6 +10,7 @@
   margin: 0;
   width: 141px;
   padding: 23px 20px 25px 20px;
+  display: inline-block;
 }
 
 .other__title-wrapper {
@@ -20,7 +21,7 @@
     position: absolute;
     top: 50%;
     height: 2px;
-    width: 100%;
+    width: 100vw;
     background-color: @button-bg-color;
     z-index: -1;
   }
@@ -70,7 +71,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("../img/other/checkbox.png") no-repeat;
+    background: url("../img/other/checkbox.svg") no-repeat;
     display: none;
   }
 
@@ -95,17 +96,28 @@
 @media (min-width: @tablet-width) {
   .other__title-wrapper {
     width: auto;
-    margin: 0 0 0 -30px;
+    position: relative;
 
     &::before {
       top: 60%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      height: 2px;
+      width: 1000%;
+      background-color: @button-bg-color;
+      z-index: -1;
+      right: -30px;
     }
   }
 
   .other__title-main {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 70px 0 70px;
+    margin: 0 70px 0 30px;
     width: 211px;
     padding: 0 41px 0 30px;
   }
@@ -138,7 +150,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: url("../img/other/checkbox-tablet.png") no-repeat;
+      background: url("../img/other/checkbox-tablet.svg") no-repeat;
       display: none;
     }
   }

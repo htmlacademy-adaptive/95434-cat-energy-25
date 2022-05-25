@@ -1,0 +1,35 @@
+.feature {
+  margin: 0 auto;
+}
+
+.feature__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feature__parameter,
+.feature__value {
+  font-size: 12px;
+  line-height: 16px;
+  .font-style-title();
+  .font-style();
+}
+
+@media (min-width: @tablet-width) {
+  .feature__parameter,
+  .feature__value {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .feature__wrapper {
+    margin-bottom: 7px;
+    border-bottom: 1px solid @border-special-grey;
+    padding-bottom: 7px;
+  }
+
+  .feature__wrapper:last-child {
+    margin-bottom: 0;
+  }
+}
