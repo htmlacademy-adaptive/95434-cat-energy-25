@@ -1,0 +1,78 @@
+.slider {
+  position: absolute;
+  width: 86px;
+  height: 14px;
+  background-color: @background-color-main-white;
+  border: 1px solid @border-special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+  left: 117px;
+  top: -10px;
+  margin: 0;
+  margin-top: 18px;
+}
+
+.slider__button {
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  background-color: @button-bg-color;
+  border-radius: 6px;
+  top: 3px;
+  left: 7px;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    left: 171px;
+    top: 20px;
+    width: 426px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @border-color-fourth;
+    border: none;
+    margin: 0;
+  }
+
+  .slider__button {
+    position: absolute;
+    width: 33px;
+    height: 34px;
+    background-color: @background-color-main-white;
+    border-radius: 50%;
+    top: -15px;
+    left: 196px;
+    cursor: pointer;
+    border: 1px solid @border-special-grey;
+    box-sizing: border-box;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      border: 1px solid @button-bg-color;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: @button-bg-color;
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    top: -18px;
+  }
+}
+

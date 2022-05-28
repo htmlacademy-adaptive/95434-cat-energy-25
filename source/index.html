@@ -11,7 +11,7 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="#">
@@ -211,14 +211,11 @@
                 <label class="instance__label" for="primary" tabindex="0">было</label>
                 <label class="instance__label" for="secondary" tabindex="0">стало</label>
               </p>
-              <p class="instance__slider">
-                <input class="visually-hidden" type="radio" id="primary" name="toggle" checked
-                  aria-label="Показать фотографию кота до использования программы питания">
-                <span class="slider__button"></span>
-                <input class="visually-hidden" type="radio" id="secondary" name="toggle"
-                aria-label="Показать фотографию кота после использования программы питания">
-                <span class="slider__button slider__button--circle"></span>
-              </p>
+              <div class="instance__slider slider">
+                <button class="slider__button" type="button">
+                  <span class="visually-hidden">Показать фотографию кота до/после использования программы питания</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -294,7 +291,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти по ссылке на сайт HTML Academy">
             HTML Academy
           </a>
-          <a class="copyright__icon"
+          <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Перейти по ссылке на сайт HTML Academy">
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>

@@ -11,7 +11,7 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header main-header--border">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
@@ -374,73 +374,75 @@
           </ul>
         </div>
       </section>
-      <div class="additional-gift__wrapper">
-        <section class="additional-products">
-          <div class="additional-products__wrapper">
-            <div class="additional-products__title-wrapper">
-              <h2 class="additional-products__title">Дополнительные товары</h2>
+      <div class="additional-products-line">
+        <div class="additional-products-gift">
+          <section class="additional-products">
+            <div class="additional-products__wrapper">
+              <div class="additional-products__title-wrapper">
+                <h2 class="additional-products__title">Дополнительные товары</h2>
+              </div>
+              <ul class="additional-products__list">
+                <li class="additional-products__item card">
+                  <h3 class="card__title">САХАРОЗАМЕНИТЕЛЬ</h3>
+                  <dl class="card__position">
+                    <dt class="card__description">
+                      1 упаковка (100 г)
+                    </dt>
+                    <dd class="card__price">
+                      200 Р.
+                    </dd>
+                  </dl>
+                  <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
+                </li>
+                <li class="additional-products__item card">
+                  <h3 class="card__title">ПИТЬЕВАЯ ВОДА</h3>
+                  <dl class="card__position">
+                    <dt class="card__description">
+                      5 литров
+                    </dt>
+                    <dd class="card__price">
+                      50 Р.
+                    </dd>
+                  </dl>
+                  <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
+                </li>
+                <li class="additional-products__item card">
+                  <h3 class="card__title">МОЛОКО</h3>
+                  <dl class="card__position">
+                    <dt class="card__description">
+                      1 литр
+                    </dt>
+                    <dd class="card__price">
+                      100 Р.
+                    </dd>
+                  </dl>
+                  <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
+                </li>
+                <li class="additional-products__item card">
+                  <h3 class="card__title">ВИТАМИНЫ</h3>
+                  <dl class="card__position">
+                    <dt class="card__description">
+                      1 упаковка (30 г)
+                    </dt>
+                    <dd class="card__price">
+                      300 Р.
+                    </dd>
+                  </dl>
+                  <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
+                </li>
+              </ul>
             </div>
-            <ul class="additional-products__list">
-              <li class="additional-products__item card">
-                <h3 class="card__title">САХАРОЗАМЕНИТЕЛЬ</h3>
-                <dl class="card__position">
-                  <dt class="card__description">
-                    1 упаковка (100 г)
-                  </dt>
-                  <dd class="card__price">
-                    200 Р.
-                  </dd>
-                </dl>
-                <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
-              </li>
-              <li class="additional-products__item card">
-                <h3 class="card__title">ПИТЬЕВАЯ ВОДА</h3>
-                <dl class="card__position">
-                  <dt class="card__description">
-                    5 литров
-                  </dt>
-                  <dd class="card__price">
-                    50 Р.
-                  </dd>
-                </dl>
-                <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
-              </li>
-              <li class="additional-products__item card">
-                <h3 class="card__title">МОЛОКО</h3>
-                <dl class="card__position">
-                  <dt class="card__description">
-                    1 литр
-                  </dt>
-                  <dd class="card__price">
-                    100 Р.
-                  </dd>
-                </dl>
-                <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
-              </li>
-              <li class="additional-products__item card">
-                <h3 class="card__title">ВИТАМИНЫ</h3>
-                <dl class="card__position">
-                  <dt class="card__description">
-                    1 упаковка (30 г)
-                  </dt>
-                  <dd class="card__price">
-                    300 Р.
-                  </dd>
-                </dl>
-                <a class="card__button-link button" href="#" aria-label="Заказать сопутствующие товары">ЗАКАЗАТЬ</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="gift">
-          <h2 class="visually-hidden">Подарок</h2>
-          <div class="gift__wrapper">
-              <svg class="gift__icon" width="78" height="80" fill="none">
-                <use xlink:href="img/sprite.svg#gift_icon"></use>
-              </svg>
-            <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-          </div>
-        </section>
+          </section>
+          <section class="gift">
+            <h2 class="visually-hidden">Подарок</h2>
+            <div class="gift__wrapper">
+                <svg class="gift__icon" width="78" height="80" fill="none">
+                  <use xlink:href="img/sprite.svg#gift_icon"></use>
+                </svg>
+              <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
+          </section>
+        </div>
       </div>
       <section class="contacts">
         <div class="contacts__wrapper">
