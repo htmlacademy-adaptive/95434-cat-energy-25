@@ -19,9 +19,9 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 25px;
     height: 2px;
-    width: 100vw;
+    width: 100%;
     background-color: @button-bg-color;
     z-index: -1;
   }
@@ -41,7 +41,7 @@
   border: 1px solid @border-color-first;
   min-width: 280px;
   min-height: 150px;
-  padding: 0 12px;
+  padding: 8px 12px 0 12px;
   margin: 0;
   box-sizing: border-box;
   resize: none;
@@ -62,18 +62,7 @@
     position: relative;
 
     &::before {
-      top: 60%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 60%;
-      height: 2px;
-      width: 1000%;
-      background-color: @button-bg-color;
-      z-index: -1;
-      right: -30px;
+      top: 20px;
     }
   }
 
@@ -81,12 +70,12 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 0 30px;
-    width: 182px;
-    padding: 0 38px 0 30px;
+    min-width: 182px;
+    padding: 0 38px 0 40px;
   }
 
   .comment__area {
-    margin: 76px 70px 65px 70px;
+    margin: 72px 70px 60px 70px;
   }
 
   .comment__value {
@@ -110,7 +99,7 @@
   }
 
   .comment__area {
-    margin: 76px 1100px 60px 110px;
+    margin: 70px 1100px 65px 110px;
   }
 
   .comment__value {

@@ -1,25 +1,22 @@
-.control {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 13px;
-
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
+// .control {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .control__label {
   position: relative;
-  display: block;
+  display: flex;
 }
 
 .control__text {
+  width: 240px;
+  min-height: 18px;
   color: @text-color-special-black;
   .form-field-size();
   font-family: inherit;
   text-transform: uppercase;
-  padding-left: 11px;
+  padding: 6px 15px 6px 15px;
+  margin-bottom: 12px;
 }
 
 .control__mark {
@@ -65,9 +62,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .control {
+  .control__text {
     font-size: 20px;
     line-height: 30px;
+    padding: 6px 20px;
+    width: 500px;
   }
 
   .control__mark {
