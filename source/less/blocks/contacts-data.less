@@ -25,7 +25,7 @@
     position: absolute;
     top: 35%;
     height: 2px;
-    width: 100vw;
+    width: 100%;
     background-color: @button-bg-color;
     z-index: -1;
   }
@@ -36,6 +36,7 @@
   border: none;
   margin: 0 20px;
   padding: 0;
+  margin-bottom: 14px;
 }
 
 .contacts-data__value {
@@ -43,8 +44,7 @@
   color: @text-color-special;
   font-family: inherit;
   text-transform: uppercase;
-  padding: 14px 0 16px 16px;
-  margin-bottom: 14px;
+  padding: 14px 16px 13px 16px;
   margin-left: 8px;
   outline: 1px solid @border-color-first;
   box-sizing: border-box;
@@ -108,18 +108,7 @@
     position: relative;
 
     &::before {
-      top: 90%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 90%;
-      height: 2px;
-      width: 1000%;
-      background-color: @button-bg-color;
-      z-index: -1;
-      right: -30px;
+      top: 97px;
     }
   }
 
@@ -127,23 +116,22 @@
     font-size: 36px;
     line-height: 36px;
     margin: 75px 0 0 30px;
-    width: 512px;
+    min-width: 512px;
     padding: 0 42px 0 40px;
   }
 
   .contacts-data__wrapper {
     padding: 0;
-    margin: 76px 70px 51px 70px;
+    margin: 75px 70px 48px 70px;
   }
 
   .contacts-data__value {
     font-size: 20px;
     line-height: 30px;
     min-width: 450px;
-    min-height: 52px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    padding: 10px 0 10px 21px;
+    margin-left: 11px;
+    padding: 10px 15px 10px 25px;
     box-sizing: border-box;
 
     &--mail {
@@ -152,7 +140,7 @@
 
     &--phone {
       width: 530px;
-      padding-left: 15px;
+      padding-left: 20px;
     }
   }
 
@@ -186,13 +174,13 @@
   }
 
   .contacts-data__title {
-    margin: 69px 0 76px 70px;
+    margin: 65px 0 78px 70px;
     padding: 0 40px 0 40px;
   }
 
   .contacts-data__wrapper {
     padding: 0;
-    margin: 0 110px 45px 110px;
+    margin: 0 110px 50px 110px;
     flex-direction: row;
     justify-content: space-between;
   }
