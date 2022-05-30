@@ -2,11 +2,19 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-between;
-  width: 132px;
+  flex-wrap: wrap;
+  max-width: 132px;
   margin-top: 20px;
   margin-left: 74px;
   padding: 0;
+}
+
+.social__item {
+  padding-right: 24px;
+}
+
+.social__item:nth-child(3) {
+  padding-right: 0;
 }
 
 .social__link {
@@ -24,12 +32,13 @@
 @media (min-width: @tablet-width) {
   .social__list {
     margin: 0;
-    padding: 6px 0 0 51px;
+    padding: 0 0 0 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .social__list {
-    padding: 6px 0 0 136px;
+    padding: 0 0 0 135px;
+    margin-top: -4px;
   }
 }

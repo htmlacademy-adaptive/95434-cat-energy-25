@@ -1,11 +1,11 @@
 .instance__wrapper {
   background-color: @background-color-dark-grey;
   padding: 100px 0 40px 0;
-  margin-top: -100px;
+  margin-top: -105px;
 }
 
 .instance__wrapper-title {
-  padding: 25px 0 40px 20px;
+  padding: 25px 0 45px 20px;
 }
 
 .instance__title {
@@ -25,7 +25,7 @@
 }
 
 .instance__slogan {
-  padding: 20px 0 40px 0;
+  padding: 13px 0 40px 0;
   display: flex;
 
   &--position {
@@ -49,8 +49,9 @@
   line-height: 24px;
   .font-style-title();
   text-align: center;
-  margin-top: 16px;
+  margin-top: 14px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .instance__description {
@@ -110,9 +111,8 @@
 .instance__controls {
   display: flex;
   justify-content: space-between;
-  padding: 4px 41px;
-  margin: 0;
-  margin-top: 10px;
+  padding: 4px 0;
+  margin: 10px 60px 0 60px;
 }
 
 @media (min-width: @tablet-width) {
@@ -125,7 +125,7 @@
   }
 
   .instance__wrapper-title {
-    padding: 45px 0 60px 30px;
+    padding: 45px 0 62px 30px;
   }
 
   .instance__title {
@@ -170,7 +170,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 54px 30px 250px 30px;
+    padding: 54px 30px 230px 30px;
   }
 
   .instance__slogan {
@@ -192,7 +192,7 @@
 
   .instance__wrapper-image {
     background: @background-color-dark-grey;
-    height: 462px;
+    min-height: 462px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -201,14 +201,15 @@
   .instance__image {
     padding: 0;
     width: 592px;
-    height: 511px;
+    min-height: 511px;
     margin-top: -170px;
-    margin-left: 85px;
+    margin-left: 90px;
   }
 
   .instance__controls {
     margin: 0;
     padding: 7px 97px 7px 101px;
+    margin-top: -40px;
   }
 
   .instance__label {
@@ -230,7 +231,6 @@
 @media (min-width: @desktop-width) {
   .instance {
     width: 100vw;
-    height: 641px;
     background-color: @background-color-light-grey;
     margin-left: 0;
     position: relative;
@@ -243,7 +243,7 @@
       background-color: @background-color-light-grey;
       left: -100%;
       z-index: -1;
-      top: 28%;
+      top: 31%;
     }
   }
 
@@ -253,28 +253,28 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-    height: 462px;
+    min-height: 462px;
   }
 
   .instance__wrapper-title {
     background-color: @background-color-main-white;
-    padding: 43px 0 76px 110px;
+    padding: 69px 0 76px 110px;
   }
 
   .instance__wrapper-common {
     flex-basis: 50%;
-    padding: 70px 0 75px 110px;
+    margin: 70px 0 70px 110px;
   }
 
   .instance__text {
     margin: 0;
-    width: 436px;
+    width: 425px;
   }
 
   .instance__wrapper-list-slogan {
     flex-direction: column;
     padding: 0;
-    margin: 70px 0 75px 0;
+    margin: 70px 0 0 0;
   }
 
   .instance__description {
@@ -282,7 +282,7 @@
   }
 
   .instance__slogan {
-    margin-top: 60px;
+    margin-top: 55px;
     padding: 0;
     display: block;
 
@@ -300,11 +300,17 @@
 
   .instance__wrapper-image {
     background: none;
-    flex-basis: 50%;
+    flex-basis: 54%;
   }
 
-  .instance__controls,
-  .instance__slider {
-    margin-top: -40px;
+  .instance__image {
+    margin-left: -7px;
+    margin-top: -180px;
+  }
+
+  .instance__controls {
+    margin-top: -38px;
+    margin-left: 5px;
+    padding: 0;
   }
 }
