@@ -1,11 +1,11 @@
 .instance__wrapper {
   background-color: @background-color-dark-grey;
   padding: 100px 0 40px 0;
-  margin-top: -100px;
+  margin-top: -105px;
 }
 
 .instance__wrapper-title {
-  padding: 25px 0 40px 20px;
+  padding: 25px 0 45px 20px;
 }
 
 .instance__title {
@@ -25,7 +25,7 @@
 }
 
 .instance__slogan {
-  padding: 20px 0 40px 0;
+  padding: 13px 0 40px 0;
   display: flex;
 
   &--position {
@@ -49,8 +49,9 @@
   line-height: 24px;
   .font-style-title();
   text-align: center;
-  margin-top: 16px;
+  margin-top: 14px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .instance__description {
@@ -110,33 +111,8 @@
 .instance__controls {
   display: flex;
   justify-content: space-between;
-  padding: 4px 41px;
-  margin: 0;
-  margin-top: 10px;
-}
-
-.instance__slider {
-  position: absolute;
-  width: 86px;
-  height: 14px;
-  background-color: @background-color-main-white;
-  border: 1px solid @border-special-grey;
-  box-sizing: border-box;
-  border-radius: 6px;
-  left: 117px;
-  top: -10px;
-  margin: 0;
-  margin-top: 18px;
-}
-
-.slider__button {
-  position: absolute;
-  width: 36px;
-  height: 6px;
-  background-color: @button-bg-color;
-  border-radius: 6px;
-  top: 3px;
-  left: 7px;
+  padding: 4px 0;
+  margin: 10px 60px 0 60px;
 }
 
 @media (min-width: @tablet-width) {
@@ -149,7 +125,7 @@
   }
 
   .instance__wrapper-title {
-    padding: 45px 0 60px 30px;
+    padding: 45px 0 62px 30px;
   }
 
   .instance__title {
@@ -194,7 +170,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 54px 30px 250px 30px;
+    padding: 54px 30px 230px 30px;
   }
 
   .instance__slogan {
@@ -216,7 +192,7 @@
 
   .instance__wrapper-image {
     background: @background-color-dark-grey;
-    height: 462px;
+    min-height: 462px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -225,25 +201,15 @@
   .instance__image {
     padding: 0;
     width: 592px;
-    height: 511px;
+    min-height: 511px;
     margin-top: -170px;
-    margin-left: 85px;
-  }
-
-  .instance__slider {
-    left: 171px;
-    top: 20px;
-    width: 426px;
-    height: 6px;
-    border-radius: 6px;
-    background-color: @border-color-fourth;
-    border: none;
-    margin: 0;
+    margin-left: 90px;
   }
 
   .instance__controls {
     margin: 0;
     padding: 7px 97px 7px 101px;
+    margin-top: -40px;
   }
 
   .instance__label {
@@ -260,44 +226,11 @@
       border-bottom: none;
     }
   }
-
-  .slider__button {
-    position: absolute;
-    width: 33px;
-    height: 34px;
-    background-color: @background-color-main-white;
-    border-radius: 50%;
-    top: -15px;
-    left: 196px;
-    border: 1px solid @border-special-grey;
-    box-sizing: border-box;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-
-    &:hover {
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
-    }
-
-    &:active {
-      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
-      border: 1px solid @button-bg-color;
-    }
-
-    &--circle {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background-color: @button-bg-color;
-      border-radius: 50%;
-      top: -2px;
-      left: 209px;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
   .instance {
     width: 100vw;
-    height: 641px;
     background-color: @background-color-light-grey;
     margin-left: 0;
     position: relative;
@@ -310,7 +243,7 @@
       background-color: @background-color-light-grey;
       left: -100%;
       z-index: -1;
-      top: 28%;
+      top: 31%;
     }
   }
 
@@ -320,28 +253,28 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-    height: 462px;
+    min-height: 462px;
   }
 
   .instance__wrapper-title {
     background-color: @background-color-main-white;
-    padding: 43px 0 76px 110px;
+    padding: 69px 0 76px 110px;
   }
 
   .instance__wrapper-common {
     flex-basis: 50%;
-    padding: 70px 0 75px 110px;
+    margin: 70px 0 70px 110px;
   }
 
   .instance__text {
     margin: 0;
-    width: 436px;
+    width: 425px;
   }
 
   .instance__wrapper-list-slogan {
     flex-direction: column;
     padding: 0;
-    margin: 70px 0 75px 0;
+    margin: 70px 0 0 0;
   }
 
   .instance__description {
@@ -349,7 +282,7 @@
   }
 
   .instance__slogan {
-    margin-top: 60px;
+    margin-top: 55px;
     padding: 0;
     display: block;
 
@@ -367,11 +300,17 @@
 
   .instance__wrapper-image {
     background: none;
-    flex-basis: 50%;
+    flex-basis: 54%;
   }
 
-  .instance__controls,
-  .instance__slider {
-    margin-top: -40px;
+  .instance__image {
+    margin-left: -7px;
+    margin-top: -180px;
+  }
+
+  .instance__controls {
+    margin-top: -38px;
+    margin-left: 5px;
+    padding: 0;
   }
 }

@@ -50,6 +50,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+  padding: 0;
 
 
   &--closed {
@@ -95,7 +96,7 @@
 @media (min-width: @tablet-width) {
   .main-header {
     width: 708px;
-    height: 50px;
+    min-height: 50px;
     padding: 25px 30px 0 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -108,10 +109,8 @@
   .main-header__logo-wrapper {
     height: 50px;
     align-items: center;
-    margin-right: 20px;
     margin-top: 5px;
     padding: 0;
-    width: 174px;
   }
 
   .main-header__logo-text {
@@ -130,15 +129,14 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    width: 1221px;
-    height: 60px;
-    padding: 34px 110px 0 110px;
+    width: 1220px;
+    min-height: 60px;
+    padding: 54px 110px 0 110px;
   }
 
   .main-header__logo-image {
     width: 202px;
     height: 59px;
-    padding-left: 20px;
   }
 
 
